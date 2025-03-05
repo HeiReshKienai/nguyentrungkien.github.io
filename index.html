@@ -69,6 +69,27 @@
         </main>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        // Hiệu ứng xuất hiện khi cuộn trang
+        document.addEventListener("DOMContentLoaded", function () {
+            const fadeIns = document.querySelectorAll(".fade-in");
+
+            const observer = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                { threshold: 0.3 }
+            );
+
+            fadeIns.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
 </body>
 </html>

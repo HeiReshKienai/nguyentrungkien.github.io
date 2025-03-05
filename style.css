@@ -19,11 +19,15 @@
 
 /* Sidebar */
 .sidebar {
-    width: 30%;
+    width: 30%;  /* Giảm kích thước sidebar */
+    min-width: 250px; /* Đảm bảo không quá nhỏ */
     background: #0073e6;
     color: white;
     text-align: center;
-    padding: 30px 20px;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .avatar img {
