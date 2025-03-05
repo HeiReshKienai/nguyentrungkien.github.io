@@ -1,51 +1,81 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
+/* Reset mặc định */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Header */
 header {
-    background-color: #0073e6;
+    background: linear-gradient(135deg, #0073e6, #005bb5);
     color: white;
-    padding: 20px 0;
+    padding: 30px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2em;
+    font-size: 2.5em;
+    font-weight: bold;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-top: 5px;
 }
 
+/* Các section chính */
 section {
-    background-color: white;
-    margin: 20px auto;
-    padding: 20px;
-    width: 60%;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background: white;
+    margin: 30px auto;
+    padding: 25px;
+    width: 70%;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     text-align: left;
 }
 
 section h2 {
     color: #0073e6;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-left: 5px solid #0073e6;
+    padding-left: 10px;
 }
 
+/* Danh sách sở thích & môn học */
 ul {
-    list-style-type: square;
-    padding-left: 20px;
+    list-style-type: none;
 }
 
+ul li {
+    font-size: 1.2em;
+    background: #eef7ff;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    background: #cce7ff;
+    transform: scale(1.02);
+}
+
+/* Footer */
 footer {
-    background-color: #333;
+    background: #333;
     color: white;
-    padding: 10px 0;
-    position: relative;
-    width: 100%;
-    margin-top: 20px;
+    padding: 15px 0;
+    font-size: 1em;
+    margin-top: 30px;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
 }
