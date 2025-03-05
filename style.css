@@ -19,8 +19,8 @@
 
 /* Sidebar */
 .sidebar {
-    width: 30%;  /* Giảm kích thước sidebar */
-    min-width: 250px; /* Đảm bảo không quá nhỏ */
+    width: 30%;
+    min-width: 250px;
     background: #0073e6;
     color: white;
     text-align: center;
@@ -39,7 +39,6 @@
     animation: pulse 2s infinite;
 }
 
-/* Hiệu ứng Pulse cho Avatar */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -68,16 +67,19 @@ section {
     margin-bottom: 25px;
 }
 
-/* Hiệu ứng Hover danh sách */
-ul li {
-    font-size: 1.2em;
-    margin-bottom: 8px;
+/* Hiển thị công việc */
+.job {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-left: 5px solid #0073e6;
+    border-radius: 5px;
     transition: transform 0.3s ease-in-out;
 }
 
-ul li:hover {
-    transform: translateX(10px);
-    color: #0073e6;
+.job:hover {
+    transform: scale(1.02);
+    background: #eef2f6;
 }
 
 /* Thanh tiến trình kỹ năng */
@@ -106,10 +108,10 @@ ul li:hover {
     transition: width 1s ease-in-out;
 }
 
-.python { width: 90%; background: #4caf50; } /* Python: 90% */
-.web { width: 85%; background: #ff9800; } /* Web Dev: 85% */
-.sql { width: 75%; background: #3f51b5; } /* SQL: 75% */
-.ml { width: 70%; background: #e91e63; } /* Machine Learning: 70% */
+.python { width: 90%; background: #4caf50; }
+.web { width: 85%; background: #ff9800; }
+.sql { width: 75%; background: #3f51b5; }
+.ml { width: 70%; background: #e91e63; }
 
 /* Responsive */
 @media screen and (max-width: 768px) {
