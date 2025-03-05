@@ -3,109 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Nguyen Trung Kien</title>
+    <title>Portfolio - Nguyen Trung Kien</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <!-- Sidebar (Thông tin cá nhân) -->
-        <aside class="sidebar">
-            <div class="avatar">
-                <img src="images/avatar.jpg" alt="Nguyen Trung Kien">
-            </div>
-            <h2>Nguyen Trung Kien</h2>
-            <p>Mã sinh viên: 2180606198</p>
-            <p>Email: kien@example.com</p>
-            <p>Điện thoại: 0123-456-789</p>
-        </aside>
+    <header>
+        <nav>
+            <div class="logo">Trung Kien</div>
+            <ul>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#portfolio">Dự án</a></li>
+                <li><a href="#subjects">Môn học</a></li>
+                <li><a href="#hobbies">Sở thích</a></li>
+                <li><a href="#services">Dịch vụ</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+                <li><button id="darkModeToggle">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <div class="hero-content">
+            <img src="images/avatar.jpg" alt="Nguyen Trung Kien" class="avatar">
+            <h1>Xin chào, tôi là <span>Nguyễn Trung Kiên</span></h1>
+            <p>Lập trình viên Web & Phát triển phần mềm</p>
+        </div>
+    </section>
 
-        <!-- Nội dung chính -->
-        <main class="content">
-            <section class="fade-in">
-                <h2>Giới thiệu</h2>
-                <p>Tôi là Nguyễn Trung Kiên, sinh viên ngành Công cụ và Môi trường Phát triển. Tôi đam mê lập trình và luôn tìm kiếm cơ hội để mở rộng kiến thức và kỹ năng của mình.</p>
-            </section>
+    <section id="portfolio">
+        <h2>Dự án tiêu biểu</h2>
+        <div class="project">
+            <img src="images/project1.jpg" alt="Dự án 1">
+            <h3>Quản lý Sinh viên</h3>
+        </div>
+        <div class="project">
+            <img src="images/project2.jpg" alt="Dự án 2">
+            <h3>Ứng dụng Chat Realtime</h3>
+        </div>
+    </section>
 
-            <section class="fade-in">
-                <h2>Sở thích</h2>
-                <ul>
-                    <li>💻 Lập trình web & phát triển phần mềm</li>
-                    <li>📖 Đọc sách về công nghệ</li>
-                    <li>⚽ Chơi bóng đá & cầu lông</li>
-                    <li>🎵 Nghe nhạc & xem phim khoa học viễn tưởng</li>
-                </ul>
-            </section>
+    <section id="subjects">
+        <h2>Các môn học yêu thích</h2>
+        <ul>
+            <li>✅ Lập trình Web</li>
+            <li>✅ Trí tuệ nhân tạo</li>
+            <li>✅ Xử lý dữ liệu lớn</li>
+            <li>✅ An ninh mạng</li>
+        </ul>
+    </section>
 
-            <section class="fade-in">
-                <h2>Kinh nghiệm làm việc</h2>
-                <div class="job">
-                    <h3>Intern Web Developer - Công ty ABC</h3>
-                    <p><strong>Thời gian:</strong> 06/2023 - 12/2023</p>
-                    <p>- Phát triển website bằng HTML, CSS, JavaScript.</p>
-                    <p>- Tối ưu giao diện và cải thiện trải nghiệm người dùng.</p>
-                </div>
-                <div class="job">
-                    <h3>Freelancer - Lập trình viên Python</h3>
-                    <p><strong>Thời gian:</strong> 01/2024 - Nay</p>
-                    <p>- Xây dựng các công cụ tự động hóa bằng Python.</p>
-                    <p>- Làm việc với API, xử lý dữ liệu và Machine Learning cơ bản.</p>
-                </div>
-            </section>
+    <section id="hobbies">
+        <h2>Sở thích</h2>
+        <ul>
+            <li>💻 Lập trình & phát triển phần mềm</li>
+            <li>📖 Đọc sách về công nghệ</li>
+            <li>🎮 Chơi game & nghiên cứu AI trong game</li>
+            <li>⚽ Chơi bóng đá & cầu lông</li>
+        </ul>
+    </section>
 
-            <section class="fade-in">
-                <h2>Kỹ năng</h2>
-                <div class="skill">
-                    <span>Python</span>
-                    <div class="progress-bar"><div class="progress python"></div></div>
-                </div>
-                <div class="skill">
-                    <span>HTML, CSS, JavaScript</span>
-                    <div class="progress-bar"><div class="progress web"></div></div>
-                </div>
-                <div class="skill">
-                    <span>SQL & Cơ sở dữ liệu</span>
-                    <div class="progress-bar"><div class="progress sql"></div></div>
-                </div>
-                <div class="skill">
-                    <span>Machine Learning</span>
-                    <div class="progress-bar"><div class="progress ml"></div></div>
-                </div>
-            </section>
+    <section id="services">
+        <h2>Dịch vụ</h2>
+        <div class="service">💻 Lập trình Web</div>
+        <div class="service">🤖 Machine Learning</div>
+        <div class="service">⚙️ Tự động hóa</div>
+    </section>
 
-            <section class="fade-in">
-                <h2>Các môn đã học</h2>
-                <ul>
-                    <li>✔️ Lập trình C/C++</li>
-                    <li>✔️ Lập trình Python</li>
-                    <li>✔️ Cơ sở dữ liệu</li>
-                    <li>✔️ Phát triển ứng dụng web</li>
-                    <li>✔️ Trí tuệ nhân tạo & Machine Learning</li>
-                </ul>
-            </section>
-        </main>
-    </div>
-
-    <script>
-        // Hiệu ứng xuất hiện khi cuộn trang
-        document.addEventListener("DOMContentLoaded", function () {
-            const fadeIns = document.querySelectorAll(".fade-in");
-
-            const observer = new IntersectionObserver(
-                (entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add("visible");
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                },
-                { threshold: 0.3 }
-            );
-
-            fadeIns.forEach(section => {
-                observer.observe(section);
-            });
-        });
-    </script>
+    <section id="contact">
+        <h2>Liên hệ</h2>
+        <form>
+            <input type="text" placeholder="Tên của bạn" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Lời nhắn" required></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
 </body>
 </html>

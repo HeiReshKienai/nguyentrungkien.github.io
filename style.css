@@ -6,123 +6,199 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Bố cục tổng thể */
-.container {
-    display: flex;
-    max-width: 1000px;
-    margin: 50px auto;
-    background: white;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    overflow: hidden;
+body {
+    background: #f4f4f4;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
 }
 
-/* Sidebar */
-.sidebar {
-    width: 30%;
-    min-width: 250px;
+/* Header */
+header {
     background: #0073e6;
-    color: white;
+    padding: 20px;
     text-align: center;
-    padding: 30px 15px;
+    color: white;
+}
+
+nav ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
 }
 
-.avatar img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px solid white;
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#darkModeToggle {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Hero section */
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #0073e6, #0044cc);
+    color: white;
+}
+
+#hero .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
     margin-bottom: 15px;
-    animation: pulse 2s infinite;
 }
 
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+#hero h1 span {
+    color: #ffcc00;
 }
 
-/* Nội dung chính */
-.content {
-    width: 70%;
-    padding: 30px;
+/* Portfolio section */
+#portfolio {
+    padding: 50px 20px;
+    text-align: center;
 }
 
-/* Hiệu ứng xuất hiện khi cuộn trang */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-section {
-    margin-bottom: 25px;
-}
-
-/* Hiển thị công việc */
-.job {
-    margin-bottom: 20px;
+.project {
+    display: inline-block;
+    margin: 20px;
     padding: 15px;
-    background: #f8f9fa;
-    border-left: 5px solid #0073e6;
-    border-radius: 5px;
-    transition: transform 0.3s ease-in-out;
+    background: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
 }
 
-.job:hover {
-    transform: scale(1.02);
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Subjects section */
+#subjects {
+    padding: 50px 20px;
+    text-align: center;
     background: #eef2f6;
 }
 
-/* Thanh tiến trình kỹ năng */
-.skill {
-    margin-bottom: 15px;
+#subjects ul {
+    list-style: none;
+    padding: 0;
 }
 
-.skill span {
+#subjects li {
+    display: inline-block;
+    background: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
     font-size: 1.2em;
-    font-weight: 600;
-    display: block;
-    margin-bottom: 5px;
+    transition: transform 0.3s;
 }
 
-.progress-bar {
+#subjects li:hover {
+    transform: scale(1.1);
+    background: #005bb5;
+}
+
+/* Hobbies section */
+#hobbies {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+
+#hobbies li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Services section */
+#services {
+    padding: 50px 20px;
+    text-align: center;
+    background: #eef2f6;
+}
+
+.service {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    background: #0073e6;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+/* Contact section */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
     width: 100%;
-    background: #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 12px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.progress {
-    height: 12px;
-    border-radius: 10px;
-    transition: width 1s ease-in-out;
+button {
+    background: #0073e6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
 }
 
-.python { width: 90%; background: #4caf50; }
-.web { width: 85%; background: #ff9800; }
-.sql { width: 75%; background: #3f51b5; }
-.ml { width: 70%; background: #e91e63; }
+button:hover {
+    background: #005bb5;
+}
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-    .sidebar {
-        width: 100%;
-    }
-    .content {
-        width: 100%;
-        padding: 20px;
-    }
+/* Dark Mode */
+.dark-mode {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark-mode header {
+    background: #333;
+}
+
+.dark-mode .service, .dark-mode button {
+    background: #ffcc00;
+    color: #333;
+}
+
+.dark-mode button:hover {
+    background: #e6b800;
 }
