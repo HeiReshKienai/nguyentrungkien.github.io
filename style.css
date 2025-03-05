@@ -70,6 +70,37 @@ ul li:hover {
     transform: scale(1.02);
 }
 
+/* Kỹ năng */
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill span {
+    font-size: 1.2em;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 12px;
+}
+
+.progress {
+    height: 12px;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+.python { width: 90%; background: #4caf50; } /* Python: 90% */
+.web { width: 85%; background: #ff9800; } /* Web Dev: 85% */
+.sql { width: 75%; background: #3f51b5; } /* SQL: 75% */
+.ml { width: 70%; background: #e91e63; } /* Machine Learning: 70% */
+
 /* Footer */
 footer {
     background: #333;
